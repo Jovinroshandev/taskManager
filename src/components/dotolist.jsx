@@ -15,11 +15,11 @@ export default function DoToList(props){
         addList(temList)
     }
     return(
-        <div className="bg-[#0697B7] p-3 rounded-md flex-grow">
-            <h1 className="text-lg font-medium text-white">Today's Activity</h1>
+        <div className="border border-l-4 p-3 rounded-md flex-grow">
+            <h1 className="text-lg font-medium ">Today's Activity</h1>
             {
                 list.map(function(item){
-                    return <div className="flex justify-between items-center bg-white m-1 px-5 p-2 rounded-2xl hover:bg-green-200 cursor-pointer">
+                    return <div className="flex justify-between items-center bg-blue-100 m-1 px-5 p-2 rounded-2xl hover:bg-green-200 cursor-pointer">
                     <div>
                         <p className="font-medium"><i class="fa-solid fa-pen-to-square"></i> {item.activity}</p>
                         <p className="my-1">{item.date}</p>
